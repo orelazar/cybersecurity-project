@@ -1,0 +1,112 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+                
+    <main>
+        <div class="container-fluid">
+            <h1 class="mt-4">CommunicationLTD</h1>
+            <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item active">STATS</li>
+            </ol>
+            <div class="row">
+            
+            </div>
+            <div class="row">
+                <div class = "table" id = "table"></div>
+<table class="table table-striped">
+    <header>Number of Clients</header>
+    <thead>
+      <tr>
+        <th scope="col">Month</th>
+        <th scope="col">Premium Clients</th>
+        <th scope="col">Gold Clients</th>
+        <th scope="col">Standart Clients</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">July</th>
+        <td>5023</td>
+        <td>3002</td>
+        <td>8043</td>
+      </tr>
+      <tr>
+        <th scope="row">June</th>
+        <td>4324</td>
+        <td>3023</td>
+        <td>8023</td>
+      </tr>
+      <tr>
+        <th scope="row">May</th>
+        <td>3000</td>
+        <td>2500</td>
+        <td>7567</td>
+      </tr>
+      <tr>
+        <th scope="row">April</th>
+        <td>2700</td>
+        <td>2500</td>
+        <td>7567</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class = "table" id = "table"></div>
+  <table class="table table-striped">
+      <header>Income</header>
+      <thead>
+        <tr>
+          <th scope="col">Month</th>
+          <th scope="col">Celular Services</th>
+          <th scope="col">cell phone sales</th>
+          <th scope="col">Other</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">July</th>
+          <td>3200495</td>
+          <td>546958</td>
+          <td>92456</td>
+        </tr>
+        <tr>
+            <th scope="row">June</th>
+            <td>3200495</td>
+            <td>546958</td>
+            <td>92456</td>
+        </tr>
+        <tr>
+            <th scope="row">May</th>
+            <td>3200495</td>
+            <td>546958</td>
+            <td>92456</td>
+        </tr>
+        <tr>
+            <th scope="row">April</th>
+            <td>3200495</td>
+            <td>546958</td>
+            <td>92456</td>
+        </tr>
+      </tbody>
+    </table>
+            </div>
+        </div>
+    </main>
+                
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="/static/assets/demo/chart-area-demo.js"></script>
+    <script src="/static/assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+    <script src="/static/assets/demo/datatables-demo.js"></script>
+
+{% endblock javascripts %}
