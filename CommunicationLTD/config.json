@@ -1,8 +1,0 @@
-{
-    "minLength": 10 ,
-    "complexPassword": true,
-    "history": 3,
-    "dictionary": ["dictionary","dictionary","hit123.COM"],
-    "maxRetries": 3,
-    "tokenExpirationSeconds": 3000
-}
